@@ -11,8 +11,8 @@ spring:
     password: 1234
   servlet:
     multipart:
-      max-file-size: 50MB  # ??? ?? ??
-      max-request-size: 50MB  # ??? ?? ??
+      max-file-size: 50MB
+      max-request-size: 50MB
   thymeleaf:
     cache: false
 
@@ -26,13 +26,13 @@ spring:
     properties:
       hibernate:
         highlight_sql: true
-        generate_statistics: true  # SQL ?? ??? ???
+        generate_statistics: true
         dialect: org.hibernate.dialect.MySQLDialect
         jdbc:
-          batch_size: 20  # Batch ?? (??)
+          batch_size: 20
 
 logging:
   level:
-    org.hibernate.SQL: DEBUG  # Hibernate? ???? SQL ?? ??
-    org.hibernate.type.descriptor.sql.BasicBinder: TRACE  # SQL ???? ??? ??? ???
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 
